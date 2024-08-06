@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #e6e9f0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        animation: fadeIn 1.2s forwards;
+      }
+
+      header {
+        text-align: center;
+        background: #0056b3;
+        color: #fff;
+        padding: 40px 20px 20px;
+        border-radius: 10px 10px 0 0;
+        position: relative;
+      }
+
+      header img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+        border: 5px solid #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      header h1 {
+        margin: 10px 0 5px;
+        font-size: 2.2em;
+        font-weight: bold;
+      }
+
+      header p {
+        margin: 5px 0;
+        font-size: 1.1em;
+      }
+
+      section {
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f8f9fa;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 0.5s;
+      }
+
+      h2 {
+        border-bottom: 3px solid #007bff;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        font-size: 1.8em;
+        color: #333;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      h2:hover {
+        color: #0056b3;
+        transform: scale(1.05);
+      }
+
+      .job,
+      .degree,
+      .academic-record,
+      .recommendations,
+      .graphic-design,
+      .digital-marketing {
+        margin-bottom: 20px;
+      }
+
+      .job h3,
+      .degree h3 {
+        margin: 0;
+        font-size: 1.4em;
+        color: #007bff;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      .job h3:hover,
+      .degree h3:hover {
+        color: #0056b3;
+        transform: scale(1.05);
+      }
+
+      .job p,
+      .degree p,
+      .recommendations p {
+        margin: 5px 0;
+        color: #555;
+      }
+
+      .academic-record h3 {
+        font-size: 1.2em;
+        color: #333;
+      }
+
+      .academic-record ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .academic-record ul li {
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style: disc;
+        padding-left: 20px;
+        animation: slideIn 1s ease-out;
+      }
+
+      ul li {
+        margin: 5px 0;
+      }
+
+      .skills {
+        background: #0056b3;
+        color: #fff;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      .skills h2 {
+        color: #fff;
+      }
+
+      .skills ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .skills ul li {
+        display: inline-block;
+        background: #007bff;
+        color: #fff;
+        padding: 8px 12px;
+        margin: 5px;
+        border-radius: 5px;
+        transition: transform 0.3s ease, background 0.3s ease;
+        font-size: 0.9em;
+      }
+
+      .skills ul li:hover {
+        background: #0056b3;
+        transform: scale(1.1);
+      }
+
+      .recommendations {
+        background: #e0f7ff;
+        border-left: 5px solid #007bff;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      .recommendations h2 {
+        color: #007bff;
+      }
+
+      .recommendations blockquote {
+        margin: 0;
+        padding: 10px;
+        background: #d6f5ff;
+        border-left: 5px solid #0056b3;
+        font-style: italic;
+        color: #555;
+        border-radius: 5px;
+      }
+
+      footer {
+        text-align: center;
+        font-style: italic;
+        color: #666;
+        border-top: 3px solid #007bff;
+        padding-top: 10px;
+        margin-top: 20px;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- <img src="/img/download.jfif" alt="Profile Picture" />  Add your profile picture in it-->
+        <h1>Muhammad Abdul Hameed Sheikh</h1>
+        <p>Software Engineer</p>
+        <p>
+          Email: mabdulhamid545@gmail.com | Phone: 03355 437308 | LinkedIn:
+          linkedin.com/in/mabdulhameed
+        </p>
+      </header>
+
+      <section class="experience">
+        <h2>Experience</h2>
+        <div class="job">
+          <h3>Senior Software Engineer</h3>
+          <p>
+            Flipkart | Bengaluru, India | January 2022 - Present (Remote job)
+          </p>
+          <ul>
+            <li>Developed and maintained high-performance web applications.</li>
+            <li>Led a team of developers on various projects.</li>
+            <li>
+              Implemented new features and optimized existing functionalities.
+            </li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Software Engineer</h3>
+          <p>
+            Squarespace | New York, NY | June 2017 - December 2021 (Remote job)
+          </p>
+          <ul>
+            <li>Worked on full-stack development projects.</li>
+            <li>
+              Collaborated with cross-functional teams to deliver high-quality
+              software.
+            </li>
+            <li>Improved code quality and application performance.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="digital-marketing">
+        <h2>Digital Marketing Experience</h2>
+        <div class="job">
+          <h3>Digital Marketing Specialist</h3>
+          <p>Freelance | Remote | March 2019 - Present</p>
+          <ul>
+            <li>Developed and executed digital marketing campaigns.</li>
+            <li>
+              Analyzed market trends and adjusted strategies to improve reach
+              and engagement.
+            </li>
+            <li>
+              Managed social media platforms and enhanced brand visibility.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="graphic-design">
+        <h2>Graphic Design Experience</h2>
+        <div class="job">
+          <h3>Freelance Graphic Designer</h3>
+          <p>Self-Employed | Remote | January 2018 - Present</p>
+          <ul>
+            <li>
+              Designed visual assets for various clients, including logos,
+              brochures, and websites.
+            </li>
+            <li>
+              Collaborated with clients to understand their design needs and
+              provide creative solutions.
+            </li>
+            <li>
+              Managed multiple projects simultaneously while meeting deadlines
+              and client expectations.
+            </li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Graphic Design Intern</h3>
+          <p>Creative Agency | New York, NY | June 2016 - December 2017</p>
+          <ul>
+            <li>
+              Assisted in creating marketing materials and social media
+              graphics.
+            </li>
+            <li>
+              Worked closely with senior designers to learn best practices and
+              design techniques.
+            </li>
+            <li>
+              Participated in brainstorming sessions and contributed ideas for
+              new design projects.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="recommendations">
+        <h2>Recommendations</h2>
+        <blockquote>
+          "Hameed is a highly skilled engineer with a keen eye for detail. His
+          contributions to our team were invaluable, and he consistently
+          delivered high-quality work. I highly recommend him for any software
+          development role." – Jane Smith, Senior Developer
+        </blockquote>
+        <blockquote>
+          "Hameed's ability to grasp complex concepts and translate them into
+          practical solutions is remarkable. His leadership and teamwork skills
+          greatly benefited our projects." – Michael Johnson, Engineering
+          Manager
+        </blockquote>
+        <blockquote>
+          "Hameed's creative approach and attention to detail were evident in
+          every design project he undertook. His ability to translate concepts
+          into visually compelling designs made him a valuable asset to our
+          team." – Sarah Lee, Creative Director
+        </blockquote>
+        <blockquote>
+          "Hameed's expertise in digital marketing helped us reach a broader
+          audience and increase engagement significantly. His strategic thinking
+          and data-driven approach are top-notch." – Emily Clark, Marketing
+          Director
+        </blockquote>
+      </section>
+
+      <section class="education">
+        <h2>Education</h2>
+        <div class="degree">
+          <h3>Bachelor of Science in Computer Science</h3>
+          <p>Qurtab University | D-I-khan, Pakistan | Graduated May 2027</p>
+        </div>
+      </section>
+
+      <section class="academic-record">
+        <h2>Academic Record</h2>
+        <div class="academic-record">
+          <h3>Relevant Coursework</h3>
+          <ul>
+            <li>Advanced Web Development</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Database Management Systems</li>
+            <li>Software Engineering Principles</li>
+          </ul>
+          <h3>Honors and Achievements</h3>
+          <ul>
+            <li>Dean’s List: 2016 - 2018</li>
+            <li>Best Final Year Project Award</li>
+            <li>Certified in Full-Stack Web Development</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <!-- Software Engineering Skills -->
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Python</li>
+          <li>Django</li>
+          <li>PHP</li>
+          <li>SQL</li>
+          <li>NoSQL</li>
+          <li>Git</li>
+
+          <!-- Graphic Design Skills -->
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
+          <li>Adobe InDesign</li>
+          <li>Sketch</li>
+          <li>Figma</li>
+          <li>InVision</li>
+          <li>CorelDRAW</li>
+          <li>UI/UX Design</li>
+          <li>Brand Identity</li>
+          <li>Typography</li>
+          <li>Illustration</li>
+
+          <!-- Digital Marketing Skills -->
+          <li>SEO</li>
+          <li>Social Media Management</li>
+          <li>Content Strategy</li>
+          <li>Google Analytics</li>
+          <li>Email Marketing</li>
+          <li>PPC Advertising</li>
+          <li>Marketing Automation</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>© 2024 Muhammad Abdul Hameed Sheikh. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
